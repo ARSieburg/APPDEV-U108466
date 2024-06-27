@@ -20,7 +20,7 @@ Python offers several **core features** that make it immensely popular:
 Python's syntax is intuitive and close to the English language, which minimizes the time needed to become productive. As an interpreted language, Python allows you to run programs immediately without the need to compile. This makes for a rapid feedback loop conducive to learning. For example, a simple print statement in Python looks like this:
 
 ```python 
-print("Hello, Python!")
+    print("Hello, Python!")
 ```
 
 ### 1.2 Robust Standard Library
@@ -28,14 +28,14 @@ print("Hello, Python!")
 Python comes with a *vast standard library*, often referred to as its "batteries-included" feature. Whatever the task, there's likely a module in the standard library to help you get started. For instance, `http` for server-side code:
 
 ```python 
-from http.server import BaseHTTPRequestHandler, HTTPServer
+    from http.server import BaseHTTPRequestHandler, HTTPServer
 
-class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
+    class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
-def do_GET(self):
-    self.send_response(200)
-    self.end_headers()
-    self.wfile.write(b'Hello, Python!')
+    def do_GET(self):
+        self.send_response(200)
+        self.end_headers()
+        self.wfile.write(b'Hello, Python!')
 ```
 
 ## 2. Python in Various Domains
@@ -52,13 +52,13 @@ Whether it's web development or artificial intelligence, Python finds its applic
 Using Python for data analysis is incredibly efficient due to libraries such as Pandas. Below is an example of how you can use Pandas to read a CSV file and summarize the data:
 
 ```python 
-import pandas as pd
+    import pandas as pd
 
-# Load data
-data = pd.read_csv('data.csv')
+    # Load data
+    data = pd.read_csv('data.csv')
 
-# Display summary
-print(data.describe())
+    # Display summary
+    print(data.describe())
 ```
 
 ## 3. Python's Impact and Community
